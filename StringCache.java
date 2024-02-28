@@ -4,10 +4,7 @@ import java.util.function.Consumer;
 
 import edu.uwm.cs.util.Primes;
 
-//Jiahui Yang, Comp SCI 351, Homework 11
-//Colloborated with Christian Oropeza, Marawan Salama on helper methods
-//Went to tutor room and talked to Matt
-
+//Jiahui Yang
 /**
  * A class to manage string instances.
  * All equal string instances that are interned will be identical.
@@ -18,7 +15,7 @@ public class StringCache extends Primes{
 	private int numEntries;
 	
 
-	// TODO: hash helper function used by wellFormed and intern
+	//   hash helper function used by wellFormed and intern
 	 private int hash(String key)
 	   {
 		 int hasher = Math.abs(key.hashCode() % table.length);	 
@@ -68,7 +65,7 @@ public class StringCache extends Primes{
 		assert wellFormed() : "invariant broken in constructor"; 
 	}
 	
-	// TODO: declare rehash helper method
+	//   declare rehash helper method
 	private void rehash(int minimumCapacity) {		
 		String[] temp = table;
 		table = new String[nextPrime(4 * minimumCapacity)];
