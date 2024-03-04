@@ -1,7 +1,7 @@
 
 **Summary:**
 
-Implemented a hash table implementation of a Dictionary in Java, using linear probing with backward movement. The implementation ensures close to constant-time access for elements. The design follows the textbook's technique, with a focus on sections 11.2–11.4, pages 581–602 (3rd ed., pp. 569–590).
+Implemented a hash table implementation of a Dictionary in Java, using linear probing with backward movement. The implementation ensures close to constant-time access for elements. 
 
 **Key Points:**
 
